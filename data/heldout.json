@@ -1,0 +1,125 @@
+{
+  "context": "All studies are fictional. Assess each claim using only the supplied evidence. For replication questions, count separately established and maintained populations as biological replicates; repeated measurements from one population are technical replicates.",
+  "samples": [
+    {
+      "id": "heldout_replication_supported",
+      "scenario_id": "heldout_replication",
+      "evidence_condition": "eight_populations_three_measurements_each",
+      "reasoning_skill": "replication_structure",
+      "summary": "A fictional study reports 24 susceptibility measurements. Researchers independently established and separately maintained eight populations. They performed three susceptibility measurements on each population. No individual measurement values or variability estimates are reported.",
+      "claim": "The study includes eight biological replicates.",
+      "label": "SUPPORTED",
+      "rationale": "Eight independently established and separately maintained populations are the biological units; each contributes three repeated measurements."
+    },
+    {
+      "id": "heldout_replication_contradicted",
+      "scenario_id": "heldout_replication",
+      "evidence_condition": "eight_populations_three_measurements_each",
+      "reasoning_skill": "replication_structure",
+      "summary": "A fictional study reports 24 susceptibility measurements. Researchers independently established and separately maintained eight populations. They performed three susceptibility measurements on each population. No individual measurement values or variability estimates are reported.",
+      "claim": "The 24 measurements represent 24 independent biological replicates.",
+      "label": "CONTRADICTED",
+      "rationale": "The measurements come from eight independent populations, with three measurements per population."
+    },
+    {
+      "id": "heldout_replication_insufficient",
+      "scenario_id": "heldout_replication",
+      "evidence_condition": "eight_populations_three_measurements_each",
+      "reasoning_skill": "replication_structure",
+      "summary": "A fictional study reports 24 susceptibility measurements. Researchers independently established and separately maintained eight populations. They performed three susceptibility measurements on each population. No individual measurement values or variability estimates are reported.",
+      "claim": "Between-population variability in susceptibility exceeded within-population measurement variability.",
+      "label": "INSUFFICIENT",
+      "rationale": "Replication counts alone do not determine either source of variability; measurement values or variability estimates are needed."
+    },
+    {
+      "id": "heldout_mean_change_supported",
+      "scenario_id": "heldout_mean_change",
+      "evidence_condition": "seven_decreases_three_larger_increases",
+      "reasoning_skill": "direction_and_magnitude",
+      "summary": "Ten independently established populations each have a baseline and follow-up laboratory susceptibility score. Lower scores represent greater measured susceptibility. The exact changes, defined as follow-up minus baseline, are -2 units for seven populations and +6 units for three populations. All populations receive equal weight when calculating the mean change. Baseline score values and patient outcomes are not reported.",
+      "claim": "The mean follow-up score was 0.4 units higher than the mean baseline score.",
+      "label": "SUPPORTED",
+      "rationale": "The equally weighted mean signed change is (7 times -2 plus 3 times 6) divided by 10, which equals +0.4 units."
+    },
+    {
+      "id": "heldout_mean_change_contradicted",
+      "scenario_id": "heldout_mean_change",
+      "evidence_condition": "seven_decreases_three_larger_increases",
+      "reasoning_skill": "direction_and_magnitude",
+      "summary": "Ten independently established populations each have a baseline and follow-up laboratory susceptibility score. Lower scores represent greater measured susceptibility. The exact changes, defined as follow-up minus baseline, are -2 units for seven populations and +6 units for three populations. All populations receive equal weight when calculating the mean change. Baseline score values and patient outcomes are not reported.",
+      "claim": "The mean follow-up score was lower than the mean baseline score.",
+      "label": "CONTRADICTED",
+      "rationale": "The positive mean signed change of +0.4 units establishes an increase, contradicting a decrease."
+    },
+    {
+      "id": "heldout_mean_change_insufficient",
+      "scenario_id": "heldout_mean_change",
+      "evidence_condition": "seven_decreases_three_larger_increases",
+      "reasoning_skill": "direction_and_magnitude",
+      "summary": "Ten independently established populations each have a baseline and follow-up laboratory susceptibility score. Lower scores represent greater measured susceptibility. The exact changes, defined as follow-up minus baseline, are -2 units for seven populations and +6 units for three populations. All populations receive equal weight when calculating the mean change. Baseline score values and patient outcomes are not reported.",
+      "claim": "Each of the three populations with a +6-unit change had a follow-up score 60% higher than its baseline score.",
+      "label": "INSUFFICIENT",
+      "rationale": "A +6 change is a 60% increase from a baseline of 10 but a 30% increase from a baseline of 20. The baseline values are unspecified."
+    },
+    {
+      "id": "heldout_background_scope_supported",
+      "scenario_id": "heldout_background_scope",
+      "evidence_condition": "h1_decrease_h2_increase_h3_unmeasured",
+      "reasoning_skill": "genetic_background_scope",
+      "summary": "Researchers measured changes in a laboratory susceptibility score in genetic backgrounds H1 and H2. The mean change was -3 units in H1 and +2 units in H2, calculated relative to each background's own baseline. Lower scores represent greater measured susceptibility. Background H3 was not measured. No relationship that determines H3's response from H1 or H2 is supplied. These are descriptive results; no uncertainty estimates or patient outcomes are reported.",
+      "claim": "The mean score in H1 decreased relative to its own baseline.",
+      "label": "SUPPORTED",
+      "rationale": "H1's reported mean change is -3 units."
+    },
+    {
+      "id": "heldout_background_scope_contradicted",
+      "scenario_id": "heldout_background_scope",
+      "evidence_condition": "h1_decrease_h2_increase_h3_unmeasured",
+      "reasoning_skill": "genetic_background_scope",
+      "summary": "Researchers measured changes in a laboratory susceptibility score in genetic backgrounds H1 and H2. The mean change was -3 units in H1 and +2 units in H2, calculated relative to each background's own baseline. Lower scores represent greater measured susceptibility. Background H3 was not measured. No relationship that determines H3's response from H1 or H2 is supplied. These are descriptive results; no uncertainty estimates or patient outcomes are reported.",
+      "claim": "The mean score in H2 decreased relative to its own baseline.",
+      "label": "CONTRADICTED",
+      "rationale": "H2's reported mean change is +2 units, establishing an increase."
+    },
+    {
+      "id": "heldout_background_scope_insufficient",
+      "scenario_id": "heldout_background_scope",
+      "evidence_condition": "h1_decrease_h2_increase_h3_unmeasured",
+      "reasoning_skill": "genetic_background_scope",
+      "summary": "Researchers measured changes in a laboratory susceptibility score in genetic backgrounds H1 and H2. The mean change was -3 units in H1 and +2 units in H2, calculated relative to each background's own baseline. Lower scores represent greater measured susceptibility. Background H3 was not measured. No relationship that determines H3's response from H1 or H2 is supplied. These are descriptive results; no uncertainty estimates or patient outcomes are reported.",
+      "claim": "Background H3 had a mean score change of +1 unit relative to its own baseline.",
+      "label": "INSUFFICIENT",
+      "rationale": "H3 was not measured, and no supplied relationship determines its response."
+    },
+    {
+      "id": "heldout_clinical_translation_supported",
+      "scenario_id": "heldout_clinical_translation",
+      "evidence_condition": "k1_laboratory_change_no_patient_outcomes",
+      "reasoning_skill": "clinical_translation",
+      "summary": "Researchers measured a laboratory susceptibility score for bacterial background K1 before and after a change. Its mean score decreased by 4 units. Lower scores represent greater measured susceptibility. No patients were enrolled, no treatment was administered to patients, and no recovery rates or other patient outcomes were measured. No validated relationship linking this score change to patient recovery rates is supplied.",
+      "claim": "The mean score in K1 decreased relative to its own baseline.",
+      "label": "SUPPORTED",
+      "rationale": "K1's reported mean change is -4 units."
+    },
+    {
+      "id": "heldout_clinical_translation_contradicted",
+      "scenario_id": "heldout_clinical_translation",
+      "evidence_condition": "k1_laboratory_change_no_patient_outcomes",
+      "reasoning_skill": "clinical_translation",
+      "summary": "Researchers measured a laboratory susceptibility score for bacterial background K1 before and after a change. Its mean score decreased by 4 units. Lower scores represent greater measured susceptibility. No patients were enrolled, no treatment was administered to patients, and no recovery rates or other patient outcomes were measured. No validated relationship linking this score change to patient recovery rates is supplied.",
+      "claim": "The mean score in K1 increased relative to its own baseline.",
+      "label": "CONTRADICTED",
+      "rationale": "K1's reported mean change is negative, contradicting an increase."
+    },
+    {
+      "id": "heldout_clinical_translation_insufficient",
+      "scenario_id": "heldout_clinical_translation",
+      "evidence_condition": "k1_laboratory_change_no_patient_outcomes",
+      "reasoning_skill": "clinical_translation",
+      "summary": "Researchers measured a laboratory susceptibility score for bacterial background K1 before and after a change. Its mean score decreased by 4 units. Lower scores represent greater measured susceptibility. No patients were enrolled, no treatment was administered to patients, and no recovery rates or other patient outcomes were measured. No validated relationship linking this score change to patient recovery rates is supplied.",
+      "claim": "Under the same treatment, patients infected with K1 after the score change would have higher recovery rates than patients infected with K1 before the score change.",
+      "label": "INSUFFICIENT",
+      "rationale": "No patient outcomes were measured, and no validated relationship linking the laboratory score change to recovery rates is supplied."
+    }
+  ]
+}

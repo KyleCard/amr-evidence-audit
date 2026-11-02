@@ -1,0 +1,19 @@
+{
+  "task": {
+    "task": "evidence_audit.py@evidence_order_audit",
+    "args": {
+      "dataset_file": "data/heldout.json"
+    }
+  },
+  "model": {
+    "model": "ollama/gemma4:12b"
+  },
+  "generate_config": {
+    "temperature": 0,
+    "max_tokens": 2048,
+    "max_connections": 1
+  },
+  "eval_config": {
+    "epochs": 1
+  }
+}

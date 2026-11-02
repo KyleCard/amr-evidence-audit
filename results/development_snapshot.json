@@ -1,0 +1,32 @@
+{
+  "captured_at_utc": "2026-11-02T14:15:10.455254+00:00",
+  "python_version": "3.14.8",
+  "inspect_ai_version": "0.3.287",
+  "openai_client_version": "3.42.0",
+  "ollama_version": "0.40.9",
+  "model_name": "gemma4:12b",
+  "model_digest": "6114515d63c17436a7c0417d82820ac65ad643e2806c5a3c89cb62846436ed0b",
+  "model_details": {
+    "parent_model": "imatrix-20260927-12b/model-q4_K_M.gguf",
+    "format": "gguf",
+    "family": "gemma4",
+    "families": [
+      "gemma4"
+    ],
+    "parameter_size": "11.9B",
+    "quantization_level": "Q4_K_M",
+    "context_length": 262144,
+    "embedding_length": 3840,
+    "runner": "llamacpp"
+  },
+  "file_sha256": {
+    "evidence_audit.py": "2b77858b434a6dd7900b280862c8b5d76bd11c57fe4b54bb4129219500df4501",
+    "summarize_log.py": "6d8b613d589f21de22219f7a26de5ebb7993cbf7036b7f49a9103a40c756ef9b",
+    "analyze_log.py": "abb1ac880502646b0dc636d5383d28cdafa26ab879a3783a984f3fd8c3a1551e",
+    "snapshot_config.py": "c0bdcfcf1c93b73526cf15e9b6fd0b3c40874abaad97bb41549fa1de18a6bf3f",
+    "requirements-lock.txt": "7c7d0686b5cd217d48f68174fbe4127c3a21418787fca17896a39f01d0b78f1f",
+    "data/generalization.json": "a5cbb8a67409d2d8004fb6b9a28e865e3d73cd3bbf170f6fbae0992fd00686b7",
+    "data/generalization_v2.json": "1f86618bb9b4dd3ab93f80ccf09fd0e56328d9e0f2a3374da40dcee8b29002e3",
+    "data/replication.json": "12cedd034f3f2fe53999c3c8482071930a2745192961a1a1dcbfedbeea15e331"
+  }
+}

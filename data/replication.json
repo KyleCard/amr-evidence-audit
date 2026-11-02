@@ -1,0 +1,32 @@
+{
+  "context": "For this task, count separately established and maintained populations as biological replicates. Repeated measurements of aliquots from one population are technical replicates.",
+  "samples": [
+    {
+      "id": "replication_supported",
+      "scenario_id": "replication_count",
+      "evidence_condition": "independent_populations",
+      "summary": "A fictional study reports 12 susceptibility measurements. Researchers independently established and separately maintained 12 populations. They performed one susceptibility measurement on each population.",
+      "claim": "The study includes 12 independent biological replicates.",
+      "label": "SUPPORTED",
+      "rationale": "Each measurement represents a distinct, independently established population."
+    },
+    {
+      "id": "replication_contradicted",
+      "scenario_id": "replication_count",
+      "evidence_condition": "shared_population",
+      "summary": "A fictional study reports 12 susceptibility measurements. Researchers sampled 12 aliquots from one population and measured each aliquot once, with no intervening independent growth or treatment.",
+      "claim": "The study includes 12 independent biological replicates.",
+      "label": "CONTRADICTED",
+      "rationale": "All 12 measurements represent aliquots of one population."
+    },
+    {
+      "id": "replication_insufficient",
+      "scenario_id": "replication_count",
+      "evidence_condition": "replication_unspecified",
+      "summary": "A fictional study reports 12 susceptibility measurements. The number of populations and the number of measurements per population are not reported.",
+      "claim": "The study includes 12 independent biological replicates.",
+      "label": "INSUFFICIENT",
+      "rationale": "The measurement count does not establish the number of populations."
+    }
+  ]
+}

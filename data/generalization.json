@@ -1,0 +1,55 @@
+{
+  "context": "This study is fictional. Assess each claim using only the supplied evidence.",
+  "samples": [
+    {
+      "id": "g1_decrease_supported",
+      "scenario_id": "background_and_clinical_scope",
+      "evidence_condition": "g1_only",
+      "reasoning_skill": "within_background",
+      "summary": "Researchers measured the mean change in a laboratory susceptibility score in genetic background G1. Its mean change was -2 units. Lower scores represent greater measured susceptibility. Backgrounds G2 and G3 were not measured. No patient outcomes were assessed.",
+      "claim": "The measured mean score decreased in G1.",
+      "label": "SUPPORTED",
+      "rationale": "The reported mean change in G1 is negative."
+    },
+    {
+      "id": "g1_increase_contradicted",
+      "scenario_id": "background_and_clinical_scope",
+      "evidence_condition": "g1_only",
+      "reasoning_skill": "within_background",
+      "summary": "Researchers measured the mean change in a laboratory susceptibility score in genetic background G1. Its mean change was -2 units. Lower scores represent greater measured susceptibility. Backgrounds G2 and G3 were not measured. No patient outcomes were assessed.",
+      "claim": "The measured mean score increased in G1.",
+      "label": "CONTRADICTED",
+      "rationale": "The reported mean change in G1 is negative, contradicting an increase."
+    },
+    {
+      "id": "g2_g3_decrease_insufficient",
+      "scenario_id": "background_and_clinical_scope",
+      "evidence_condition": "g1_only",
+      "reasoning_skill": "across_backgrounds",
+      "summary": "Researchers measured the mean change in a laboratory susceptibility score in genetic background G1. Its mean change was -2 units. Lower scores represent greater measured susceptibility. Backgrounds G2 and G3 were not measured. No patient outcomes were assessed.",
+      "claim": "The mean score would decrease in G2 and G3.",
+      "label": "INSUFFICIENT",
+      "rationale": "G2 and G3 were not measured, and no relationship determines their responses from G1."
+    },
+    {
+      "id": "g2_g3_increase_insufficient",
+      "scenario_id": "background_and_clinical_scope",
+      "evidence_condition": "g1_only",
+      "reasoning_skill": "across_backgrounds",
+      "summary": "Researchers measured the mean change in a laboratory susceptibility score in genetic background G1. Its mean change was -2 units. Lower scores represent greater measured susceptibility. Backgrounds G2 and G3 were not measured. No patient outcomes were assessed.",
+      "claim": "The mean score would increase in G2 and G3.",
+      "label": "INSUFFICIENT",
+      "rationale": "G2 and G3 were not measured. A decrease being unresolved does not establish an increase."
+    },
+    {
+      "id": "patient_benefit_insufficient",
+      "scenario_id": "background_and_clinical_scope",
+      "evidence_condition": "g1_only",
+      "reasoning_skill": "clinical_translation",
+      "summary": "Researchers measured the mean change in a laboratory susceptibility score in genetic background G1. Its mean change was -2 units. Lower scores represent greater measured susceptibility. Backgrounds G2 and G3 were not measured. No patient outcomes were assessed.",
+      "claim": "The observed score decrease in G1 establishes that patients infected with G1 would have better treatment outcomes.",
+      "label": "INSUFFICIENT",
+      "rationale": "The summary reports a laboratory measurement without evidence establishing improved patient outcomes."
+    }
+  ]
+}
